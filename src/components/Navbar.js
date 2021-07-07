@@ -6,6 +6,7 @@ import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
 import Logo from '../logo.jpg'
+import {Button} from 'react-bootstrap';
 
 
 function Navbar() {
@@ -20,6 +21,13 @@ function Navbar() {
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
+
+          <div className='search'>
+   <input type="text" placeholder="Search.." className='ip-search'/>
+   <button type="submit" className='btn-grad'>+</button>
+
+          </div>
+
         </div>
       </IconContext.Provider>
 
