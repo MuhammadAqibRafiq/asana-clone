@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Mytasks from './pages/Mytasks';
-import Inbox from './pages/Inbox';
+import Home from './components/Pages/Home/Home';
+import Mytasks from './components/Pages/Mytasks/Mytasks';
+import Inbox from './components/Pages/Inbox/Inbox';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
           <Route path='/inbox' component={Inbox} />
         </Switch>
       </Router>
+      
     </>
   );
 }

@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
-import Logo from '../logo.jpg'
-import {Button} from 'react-bootstrap';
+import Logo from './logo.jpg'
+// import {Button} from 'react-bootstrap';
 
 
 function Navbar() {
@@ -36,7 +36,7 @@ function Navbar() {
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
-              <h5 className='logo'><img className='logoimg' src={Logo}/>asana</h5>
+              <h5 className='logo'><img className='logoimg' src={Logo} alt=''/>asana</h5>
               <Link to='#' className='second-menu-bars'>
               <FaIcons.FaAngleLeft />
                 <FaIcons.FaBars  />
